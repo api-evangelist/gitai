@@ -1,7 +1,25 @@
 aid: gitai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gitai.png
 name: GITAI
-description: GITAI is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GITAI is a space robotics company building safe and affordable robotic labor for space. It develops
+  robotic arms, spacecraft platforms, autonomous "Inchworm" robots, and lunar rovers for on-orbit
+  servicing, satellite assembly and maintenance, and lunar and orbital infrastructure construction,
+  working with customers and agencies such as NASA and JAXA. GITAI operates as a B2B and government
+  contractor and does not currently publish a public developer platform, API, SDK, or developer
+  documentation; this profile was surfaced as a 500 Global portfolio company and enriched with the
+  publicly observable web, blog, and domain-security surface only.
 url: https://raw.githubusercontent.com/api-evangelist/gitai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Space
+- Robotics
+- Aerospace
+- Space Robotics
+- On-Orbit Servicing
+- Satellite
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gitai-domain-security.yml
+- type: Blog
+  url: https://gitai.tech/news/
+- type: BlogRSS
+  url: https://gitai.tech/feed/
 - type: Website
   url: https://gitai.tech
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
